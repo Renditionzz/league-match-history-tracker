@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+@font-face {
+  font-family: "Beaufort";
+  src: url("../BeaufortforLOL-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Beaufort", sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.container {
+  display: flex;
+  flex-direction: column-reverse;
+  margin: 20px;
+}
+
+/* Match Container */
+.match {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 10px;
+  box-sizing: border-box;
+  font-family: "Beaufort", sans-serif;
+}
+.victory {
+  background-color: aquamarine;
+  border: 2px solid rgb(66, 173, 63);
+  border-top: none;
+}
+.defeat {
+  background-color: rgb(255, 127, 127);
+  border: 2px solid rgb(173, 63, 63);
+  border-top: none;
+}
+
+.stats {
+  width: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* MatchState */
+.matchState {
+  margin-bottom: 5px;
+  font-family: "Beaufort", sans-serif;
+}
+.matchStateVictory {
+  color: rgb(14, 105, 14);
+}
+.matchStateDefeat {
+  color: rgb(122, 23, 23);
+}
+/* Stats */
